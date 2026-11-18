@@ -1,0 +1,9 @@
+interface metadata {
+  record plugin-metadata {
+    name: string,
+    version: string,
+    description: string,
+  }
+
+  get-metadata: func() -> plugin-metadata;
+}

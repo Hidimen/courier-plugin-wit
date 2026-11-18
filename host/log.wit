@@ -1,0 +1,14 @@
+package courier:host@0.1.0;
+
+interface log {
+  enum level {
+    trace,
+    debug,
+    info,
+    warn,
+    error,
+    fatal
+  }
+
+  log: func(level: level, msg: string);
+}
