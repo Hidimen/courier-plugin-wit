@@ -1,0 +1,9 @@
+package courier:plugin@0.1.0;
+
+world plugin{
+  import log;
+
+  use metadata.{plugin-metadata as plugin-metadata-type};
+
+  export init: func() -> plugin-metadata-type;
+}

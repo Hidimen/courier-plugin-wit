@@ -1,7 +1,0 @@
-package courier:plugin@0.1.0;
-
-world plugin{
-  use metadata.{plugin-metadata};
-
-  export init: func() -> plugin-metadata;
-}
