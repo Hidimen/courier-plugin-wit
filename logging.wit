@@ -1,4 +1,4 @@
-interface log {
+interface logging {
   enum level {
     trace,
     debug,

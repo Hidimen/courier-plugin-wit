@@ -1,9 +1,16 @@
 package courier:plugin@0.1.0;
 
-world plugin{
-  import log;
+interface plugin-api {
+  use types.{plugin-metadata};
 
-  use metadata.{plugin-metadata as plugin-metadata-type};
+  resource plugin {
+    constructor();
+    metadata: func() -> plugin-metadata;
+  }
+}
 
-  export init: func() -> plugin-metadata-type;
+world plugin {
+  import logging;
+
+  export plugin-api;
 }
